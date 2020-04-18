@@ -1,7 +1,8 @@
 # pylint: disable=C0111
 
-from . import tools
+from kineticpy.__about__ import __author__, __author_email__, __version__
+from .geo import rotate_matrix
 
 __all__ = [
-    "tools",
+    "rotate_matrix",
 ]
