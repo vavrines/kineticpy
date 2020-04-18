@@ -1,0 +1,6 @@
+__author__ = "Tianbai Xiao"
+__author_email__ = "tianbaixiao@gmail.com"
+__copyright__ = f"Copyright (c) 2020, {__author__} <{__author_email__}>"
+__license__ = "License :: OSI Approved :: MIT License"
+__version__ = "0.1.0"
+__status__ = "Development Status :: 1 - Beta"
