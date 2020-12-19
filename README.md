@@ -1,6 +1,6 @@
 # kineticpy
 
-Python wrapper of [Kinetic.jl](https://github.com/vavrines/Kinetic.jl), which is a lightweight Julia toolbox for the study of kinetic theory and scientific machine learning
+Python wrapper of [Kinetic.jl](https://github.com/vavrines/Kinetic.jl), which is a lightweight Julia toolbox for the study of kinetic theory and scientific machine learning.
 
 ## How to use
 We start by cloning the repository and changing into the directory
