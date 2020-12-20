@@ -5,6 +5,8 @@ import sys
 sys.path.append("../")
 import kineticpy as kt
 
+import codecov
+
 axis = np.random.rand(3)
 angle = np.random.rand()
 
