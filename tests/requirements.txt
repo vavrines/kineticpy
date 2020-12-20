@@ -1,8 +1,0 @@
-coverage==5.3
-mock
-numpy
-pytest>=4.6.0
-pytest-cov
-funcsigs
-requests
-black ; python_version >= '3.7'
