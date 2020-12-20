@@ -1,10 +1,20 @@
-dist: trusty
-
 language: python
-
+dist: xenial
+sudo: false
 python:
-    - '3.8'
-
+  - 3.7
+matrix:
+  include:
+    - python: 3.7
+      dist: trusty
+      virtualenv:
+        system_site_packages: true
+      addons:
+        apt:
+          packages:
+            - python-requests
+            - python-coverage
+            
 addons:
   apt:
     packages:
@@ -18,3 +28,5 @@ script:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+
+   
