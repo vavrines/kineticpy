@@ -31,11 +31,12 @@ jobs:
         pip install -r test/requirements.txt
     - name: Test
       run: |
-#        cd test/
-#        pytest --cov kineticpy test.py
-        pytest -v tests/ --cov=kineticpy/
+         pytest -v tests/ --cov=kineticpy/
     - name: Upload coverage reports to Codecov
       run: |
         codecov
       env: # Or as an environment variable
         super_secret: ${{ secrets.CODECOV_TOKEN }}
+
+#        cd test/
+#        pytest --cov kineticpy test.py
