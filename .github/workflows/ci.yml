@@ -10,10 +10,31 @@ on:
     branches: [ master ]
 
 jobs:
-  test:
+  build:
+
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.7]
+
     steps:
-    - uses: actions/checkout@v2 # Check out your repository
-    - run: yarn # Install dependencies
-    - run: yarn test --coverage # Run test
-    - run: bash <(curl -s https://codecov.io/bash) # Upload to Codecov
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.sha }}
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r tests/requirements.txt
+    - name: Test
+      run: |
+        cd test/
+        pytest --cov sphericalquadpy
+    - name: Upload coverage reports to Codecov
+      run: |
+        codecov
+      env: # Or as an environment variable
+        super_secret: ${{ secrets.CODECOV_TOKEN }}

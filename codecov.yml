@@ -1,4 +1,6 @@
-# codecov.yml
-
+comment: no
+codecov:
+  disable_default_path_fixes: true
 fixes:
-  - "/home/runner/work/<project name>/<project name>/::" # Correct paths
+  - ".*/dist-packages/::"
+  - ".*/site-packages/::"
