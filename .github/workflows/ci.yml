@@ -33,6 +33,7 @@ jobs:
         pytest test.py --cov=codecov
     - name: Upload coverage reports to Codecov
       run: |
+        cd tests
         codecov
       env: # Or as an environment variable
         super_secret: ${{ secrets.CODECOV_TOKEN }}
