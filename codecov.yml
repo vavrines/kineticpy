@@ -1,10 +1,4 @@
-codecov:
-  archive:
-    uploads: no
+# codecov.yml
 
-coverage:
-  precision: 0
-  range: 80...100
-
-comment:
-  layout: "header, diff, changes"
+fixes:
+  - "/home/runner/work/<project name>/<project name>/::" # Correct paths
