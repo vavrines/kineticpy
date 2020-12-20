@@ -1,5 +1,7 @@
 # kineticpy
 
+![CI](https://github.com/vavrines/kineticpy/workflows/CI/badge.svg)
+
 Python wrapper of [Kinetic.jl](https://github.com/vavrines/Kinetic.jl), which is a lightweight Julia toolbox for the study of kinetic theory and scientific machine learning.
 
 ## How to use
