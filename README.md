@@ -16,7 +16,7 @@ We can initialize the module by
     
 ```pycon
 >>> import kineticpy
->>> diffeqpy.install()
+>>> kineticpy.install()
 ```
 
 while the basic structs and methods are stored in 
