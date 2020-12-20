@@ -32,7 +32,7 @@ jobs:
     - name: Test
       run: |
         cd test/
-        pytest --cov sphericalquadpy
+        pytest --cov kineticpy
     - name: Upload coverage reports to Codecov
       run: |
         codecov
