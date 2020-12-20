@@ -31,8 +31,7 @@ jobs:
         pip install -r tests/requirements.txt
     - name: Test
       run: |
-        make reinstall
-        make test
+        cd test/ && pytest --cov kineticpy
     - name: Upload coverage reports to Codecov
       run: |
         codecov
