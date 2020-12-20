@@ -1,6 +1,10 @@
-comment: no
 codecov:
-  disable_default_path_fixes: true
-fixes:
-  - ".*/dist-packages/::"
-  - ".*/site-packages/::"
+  archive:
+    uploads: no
+
+coverage:
+  precision: 0
+  range: 80...100
+
+comment:
+  layout: "header, diff, changes"
